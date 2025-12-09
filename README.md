@@ -23,28 +23,6 @@ Damit die drei Schichten auch vernünftig miteinander arbeiten können, muss ein
 uv
 uv is an extremely fast Python package and project manager, written in Rust.
 
-
-### Datenmodell
- 
-Zu jedem Buch liegen folgende Informationen vor: isbn, titel, zugehöriges Fach, Stückzahl und die noch verfügbaren Bücher.
- 
-Intern werden einzelne Bücher aktuell als Dictionary mit folgenden *keys* gespeichert:
- 
-```python
-{
-    "isbn": str,               # eindeutige Buch-ID
-    "title": str,              # Titel des Buches
-    "categorie": str,          # Kategorie
-    "total": int,              # Gesamtanzahl der Exemplare
-    "available": int,          # Zurzeit verfügbare Bücher
-}
-```
- 
-Es muss jedoch noch evaluiert werden wie alle Bücher zusammengefasst werden:
- 
-- Als Liste mit Dictionaries
-- Als geschachteltes Dictionary mit ISBN als Schlüssel(key).
- 
 ### Datenspeicher
  
 Die Wörter zum eraten befinden sich in einer Text-Datei wörter.txt und sind dort gespeichert.
