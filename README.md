@@ -55,3 +55,5 @@ Folgende Funktionen werden realisiert:
 - „wort_erzeugen“
 - „buchstaben_raten“
 - "open_file"
+test
+test
